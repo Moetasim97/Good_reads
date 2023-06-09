@@ -1,0 +1,44 @@
+.App {
+  background-color: white;
+  padding:0px;
+  margin: 0px;
+}
+
+.title_font{
+    font-size: bold;
+      font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.App-header {
+  background-color: green;
+  min-height: fit-content;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-bottom: 15px;
+}
+/* .generic_border{
+  border-bottom:1px solid black
+} */
+.my_container{
+  background-color: inherit;
+  height:300px;
+  width:100%;
+  padding-bottom: 5px;
+
+}
+.section_title{
+  height:fit-content;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  font-weight: bolder;
+}
+
+
