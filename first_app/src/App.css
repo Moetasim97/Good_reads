@@ -2,7 +2,9 @@
   background-color: white;
   padding:0px;
   margin: 0px;
+
 }
+
 
 .title_font{
     font-size: bold;
@@ -10,7 +12,9 @@
 
 }
 
-
+.fit_content{
+  height: 370px;
+}
 
 .App-header {
   background-color: green;
@@ -28,21 +32,21 @@
 } */
 .first_container{
   background-color: inherit;
-  height:300px;
+  height:fit-content;
   width:100%;
   padding-bottom: 5px;
 
 }
 .second_container {
   background-color: inherit;
-  height: 300px;
+  height: fit-content;
   width: 100%;
   padding-bottom: 5px;
 
 }
 .third_container {
   background-color: inherit;
-  height: 300px;
+  height: fit-content;
   width: 100%;
   padding-bottom: 5px;
 
@@ -56,4 +60,40 @@
   font-weight: bolder;
 }
 
+
+img{
+  height:270px;
+  width:180px;
+}
+
+.book_title{
+  width:180px;
+
+}
+
+
+
+.my_class{
+  background-color: green;
+  padding:15px;
+  border-radius: 50%;
+  position:absolute;
+  bottom:85px;
+  right:45px;
+  cursor:pointer;
+}
+
+.book_wrapper{
+  position:relative;
+}
+
+.position_adjuster{
+  position: fixed;
+  background-color: green;
+  padding:15px;
+  border-radius: 50%;
+  bottom:50px;
+  right:45px;
+  cursor:pointer;
+}
 
