@@ -57,6 +57,13 @@ export default class Modal extends React.Component{
     
                     }}></input>
                 </div>
+
+                <div className="container"> 
+                    <div className="row">
+                        {this.state.minified_data.length>0?
+                        this.state.minified_data.map((book)=><div className="col-md-3">{book.title}</div>):<div className="d-none"></div>}
+                    </div>
+                </div>
             </div>
             }
             </>
