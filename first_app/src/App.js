@@ -9,7 +9,7 @@ import Modal from "./Modal"
 class App extends React.Component {
   constructor(){
     super()
-    this.state={modalState:false}
+    this.state={modalState:false,components_array:{Currently:[],Want:[],Read:[]}}
   }
 
 
@@ -18,23 +18,7 @@ class App extends React.Component {
 
     
     
-    fetch("")
-    .then((response)=>response.json())
-  .then((data)=>{
-    if(data){
-   
-      for(let key in data)
-      {
-        if(!data[key].cover){
-          data[key].cover={medium:"https://tse4.mm.bing.net/th?id=OIP.crTooAkceDYLbEtOKVWODQHaJ4&pid=Api&P=0&h=180"}
-        }
-       data[key].category="Currently_Reading" 
-  
-       
-      }
-      this.setState({data})
-    }
-  }); 
+    
 }
 
   render(){
@@ -52,17 +36,17 @@ class App extends React.Component {
            <header className="App-header title_font">
              {this.props.admin}'s Reads
            </header>
-           <div className='first_container generic_border'>
+           <div className='book_container p-4 border'>
              <div className="section_title title_font">
                Currently Reading
              </div>
            </div>
-           <div className='second_container generic_border'>
+           <div className='book_container  p-4 border'>
              <div className="section_title title_font">
                Want To Read
              </div>
            </div>
-           <div className='third_container generic_border'>
+           <div className='book_container p-4 border'>
              <div className="section_title title_font">
                Read
              </div>
