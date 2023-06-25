@@ -94,6 +94,7 @@ img{
   width: 100vw;
   height: 100vh;
   background-color: white;
+  overflow: scroll;
   top:0;
   left:0;
 }
@@ -116,4 +117,60 @@ img{
    top:15px;
    left: 5px;
    cursor: pointer;
+}
+
+.book_thumbnail{
+  background-color: inherit;
+}
+
+.fit_cont{
+  width: fit-content;
+}
+
+.book_info{
+  height: 100px;
+  overflow:hidden;
+  width:180px;
+  
+}
+
+.list_item{
+
+  font-size: 12px;
+  width: 100px;
+  margin-left: 5px;
+}
+
+.list_item:hover{
+  background-color: royalblue;
+  color:White;
+  
+}
+
+.list_toggler{
+  position:absolute;
+  background-color: #52a24c;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding-bottom: 5px;
+  bottom: 90px;
+  right: 27px;
+}
+
+
+.options_list{
+ width: 110px;
+  position: absolute;
+  top:13px;
+  left: 11px;
+  background-color: #e5e5f3;
+  opacity: 0.9;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 70px;
+  padding-top: 5px;
+  border-radius: 5px;
+  
 }

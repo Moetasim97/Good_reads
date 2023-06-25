@@ -1,10 +1,11 @@
 import React from "react"
-
+import Books from "./Book"
 
 export default class Modal extends React.Component{
 
     constructor(props){
         super(props)
+
 
 
        this.state={modalState:this.props.state,minified_data:[]}
@@ -28,6 +29,7 @@ export default class Modal extends React.Component{
       
 
        console.log(this.state)
+      
 
         return (
             <>
@@ -59,9 +61,10 @@ export default class Modal extends React.Component{
                 </div>
 
                 <div className="container"> 
-                    <div className="row">
+                    <div className="row pt-3">
                         {this.state.minified_data.length>0?
-                        this.state.minified_data.map((book)=><div className="col-md-3">{book.title}</div>):<div className="d-none"></div>}
+                        this.state.minified_data.map((book)=><Books state={book} all_shelves={this.props.shelves}/>):
+                        <div>No books identified yet</div>}
                     </div>
                 </div>
             </div>
