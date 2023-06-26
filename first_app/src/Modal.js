@@ -63,7 +63,7 @@ export default class Modal extends React.Component{
                 <div className="container"> 
                     <div className="row pt-3">
                         {this.state.minified_data.length>0?
-                        this.state.minified_data.map((book)=><Books state={book} all_shelves={this.props.shelves}/>):
+                        this.state.minified_data.map((book)=><Books state={book} all_shelves={this.props.shelves} appending_books={this.props.add_to_shelves}/>):
                         <div>No books identified yet</div>}
                     </div>
                 </div>
