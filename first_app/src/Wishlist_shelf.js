@@ -22,8 +22,8 @@ export default class Want_to_read extends React.Component {
 
     render(){
 
-  
-        console.log(this.state.state_object)
+        console.log("I got rendered")
+        // console.log(this.state.state_object)
         var rendering_object={}
         for(let key in this.props.copy){
             rendering_object[key]=JSON.parse(this.props.copy[key])

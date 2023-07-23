@@ -25,6 +25,7 @@ export default class extends React.Component{
 
 
     static getDerivedStateFromProps(props,state){
+     
 
         return [{book_shelves:props.all_shelves},{book_data:props.state}]
         
@@ -62,21 +63,15 @@ export default class extends React.Component{
                             
                          
                 return(
-               
                     <>
-                       
-                    
-                <div className="list_item" align="start" key={key} onClick={()=>{
-                    
-               
-                   
-                    // debugger;
+                <div className="list_item" align="start" key={key} onClick={
+                    ()=>{
    
                     // Now I'm going to search my original array to see if the book that I'm going to add is in any of the other shelves
             
                     var entire_data={...this.props.all_shelves}
                     // const keyy = this.book_data.key;
-                    console.log(this.state.book_data);
+             
                     var transition_copy={}
                     for(let key in entire_data){
                         transition_copy[key]=[]
@@ -93,8 +88,7 @@ export default class extends React.Component{
                         } 
                         transition_copy[key]=JSON.stringify(entire_data[key])
                        }
-                  
-               
+                    //    console.log(transition_copy[key])
             
                        const new_shelf=[...entire_data[shelf]]
                        new_shelf.push(this.props.empty_book)
@@ -103,7 +97,7 @@ export default class extends React.Component{
                          transition_copy[shelf]=JSON.stringify(entire_data[shelf])
                     
              
-                    console.log(transition_copy)
+              
                     this.setState(({
                         book_shelves: entire_data
                     }))

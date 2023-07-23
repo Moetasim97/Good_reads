@@ -29,8 +29,10 @@ var rendering_object={}
         for(let key in this.props.copy){
             rendering_object[key]=JSON.parse(this.props.copy[key])
         }
-        console.log(rendering_object)
-        console.log(this.state.state_object)
+        // console.log(rendering_object)
+        // console.log(this.state.state_object)
+        console.log("I got rendered")
+       
         return (
             <>
             <div className='row pt-3'>
